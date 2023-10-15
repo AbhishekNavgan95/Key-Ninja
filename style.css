@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100svh;
+    padding-block: 2rem;
+    background-image:  
+        linear-gradient(to bottom, #3f3f3f44, #000000),
+        url(https://images.unsplash.com/photo-1561112078-7d24e04c3407?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accent {
+    color: #43C4D9;
+    font-family: Pacifico;
+}
+
+.error {
+    background-color: rgb(255, 143, 143);
+    color: #000;
+    padding: 0rem 1rem;
+}
+
+.highlight {
+    background-color: #fff;
+    color: #000;
+    padding: 0rem 1rem;
+}
+
+.main {
+    width: 780px;
+    padding: 10rem 5rem;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #8888885f;
+    overflow-x: hidden;
+}
+
+.title {
+    color: #eee;
+    font-size: 3rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.display {
+    border: 1px solid #ffffff5e;
+    border-radius: 32px;
+    width: 100%;
+    color: #eee;
+    font-size: 1.4rem;
+    padding: 2rem 2rem;
+    flex-wrap: wrap;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.quote span {
+    font-size: 1.4rem;
+}
+
+.input {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    transition: border .2s linear;
+}
+
+.input:focus {
+    border: 2px solid #000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.start {
+    all: unset;
+    padding: .5rem 5rem;
+    border-radius: 20px;
+    color: #eee;
+    border: 1px solid #fff;
+    background-color: #43c5d9bd;
+    transition: background-color .1s linear;
+    font-size: 1.5rem;
+}
+
+.start:hover {
+    cursor: pointer;
+    background-color: #43C4D9;
+}
+
+.start:focus {
+    background-color: #43C4D9;
+}
+
+.hardness {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    all: unset;
+    padding: .5rem 3rem;
+    border-radius: 20px;
+    color: #eee;
+    border: 1px solid #fff;
+    transition: background-color .1s linear;
+    font-size: 1.5rem;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #43c5d9bd;
+}
+
+.difficulty {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.loader, .loader-2 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform-origin: left;
+    background-color: #444;
+}
+
+.loader-2 {
+    transform-origin: right;
+}
+
+.loader h1, .loader-2 h1 {
+    font-size: 4rem;
+}
+
+.result-div {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #444;
+    gap: 3rem;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.result-div .result {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.result-div button {
+    all: unset;
+    padding: .5rem 5rem;
+    border-radius: 20px;
+    color: #eee;
+    border: 1px solid #fff;
+    background-color: #43c5d9bd;
+    transition: background-color .1s linear;
+    font-size: 1.5rem;
+    pointer-events: all;
+}
+
+.result-div button:hover {
+    background-color: #43c5d9;
+}
+
+.result-div button:focus {
+    background-color: #43c5d9;
+}
+
+.result-div img {
+    width: 200px;
+}
+
+.result-div h1 {
+    font-size: 3rem;
+}
