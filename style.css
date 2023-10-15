@@ -136,6 +136,7 @@ body {
 
 .btn:hover, .btn:focus {
     background-color: #43c5d9bd;
+    cursor: pointer;
 }
 
 .difficulty {
